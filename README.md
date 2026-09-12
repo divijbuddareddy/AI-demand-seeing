@@ -1,4 +1,4 @@
-# Fridayy AI Global Growth Copilot 🚀
+# AI Global Growth Copilot 🚀
 ### *The practical AI decision layer designed for Fridayy's e-commerce platform*
 
 > **"Where should I sell this product?"**  
