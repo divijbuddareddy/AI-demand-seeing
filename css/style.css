@@ -1,0 +1,178 @@
+/* 
+ * Fridayy AI Global Growth Copilot - Official Fridayy Brand Theme
+ * Based on Fridayy's Fresh Mint & Deep Forest Emerald Design System
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Fridayy Official Color Palette */
+  --fridayy-bg: #E4F5EE;
+  --fridayy-bg-subtle: #EDFAF4;
+  --fridayy-surface: #FFFFFF;
+  --fridayy-surface-hover: #F8FDFB;
+  
+  --fridayy-forest: #0F382C;
+  --fridayy-forest-dark: #09261E;
+  --fridayy-forest-light: #164E40;
+  
+  --fridayy-teal: #249E7C;
+  --fridayy-teal-hover: #1D8568;
+  --fridayy-teal-subtle: #D2F0E3;
+  --fridayy-teal-border: #B7E6D4;
+  
+  --fridayy-butter: #FEF3C7;
+  --fridayy-butter-border: #FDE68A;
+  --fridayy-butter-text: #78350F;
+  
+  --fridayy-text-main: #0F382C;
+  --fridayy-text-body: #2B4E43;
+  --fridayy-text-muted: #5C7F74;
+  
+  --fridayy-card-shadow: 0 10px 35px -8px rgba(15, 56, 44, 0.08), 0 2px 8px -2px rgba(15, 56, 44, 0.04);
+  --fridayy-card-shadow-hover: 0 16px 40px -10px rgba(15, 56, 44, 0.14), 0 4px 12px -2px rgba(15, 56, 44, 0.06);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fridayy-bg);
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(255, 255, 255, 0.6) 0px, transparent 40%),
+    radial-gradient(at 90% 15%, rgba(210, 240, 227, 0.8) 0px, transparent 50%),
+    radial-gradient(at 50% 90%, rgba(254, 243, 199, 0.4) 0px, transparent 60%);
+  background-attachment: fixed;
+  color: var(--fridayy-text-main);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Headings font */
+h1, h2, h3, .brand-font {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Card & Surface Containers */
+.fridayy-card {
+  background: var(--fridayy-surface);
+  border: 1.5px solid var(--fridayy-teal-border);
+  border-radius: 24px;
+  box-shadow: var(--fridayy-card-shadow);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fridayy-card:hover {
+  box-shadow: var(--fridayy-card-shadow-hover);
+  border-color: #92D8BF;
+}
+
+.fridayy-card-subtle {
+  background: #F4FAF7;
+  border: 1px solid var(--fridayy-teal-border);
+  border-radius: 16px;
+}
+
+/* Header */
+.fridayy-header {
+  background: rgba(228, 245, 238, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1.5px solid rgba(183, 230, 212, 0.8);
+}
+
+/* Official Fridayy Logo SVG */
+.fridayy-logo-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons */
+.btn-fridayy-primary {
+  background-color: var(--fridayy-teal);
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(36, 158, 124, 0.3);
+}
+
+.btn-fridayy-primary:hover {
+  background-color: var(--fridayy-teal-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(36, 158, 124, 0.4);
+}
+
+.btn-fridayy-secondary {
+  background-color: #FFFFFF;
+  color: var(--fridayy-forest);
+  border: 1.5px solid var(--fridayy-teal-border);
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.btn-fridayy-secondary:hover {
+  background-color: #F2FAF6;
+  border-color: var(--fridayy-teal);
+  color: var(--fridayy-forest-dark);
+}
+
+/* Chat Bubble style matching official Fridayy UI */
+.fridayy-chat-bubble {
+  background-color: #FEF3C7;
+  color: #0F382C;
+  border: 1px solid #FDE68A;
+  border-radius: 20px;
+  border-top-left-radius: 4px;
+  box-shadow: 0 4px 16px rgba(120, 53, 15, 0.06);
+}
+
+/* Pill badges */
+.fridayy-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1.5px solid var(--fridayy-teal-border);
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--fridayy-forest);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #E4F5EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #A3DBC6;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #249E7C;
+}
+
+/* Form inputs */
+input, select, textarea {
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--fridayy-teal) !important;
+  box-shadow: 0 0 0 3px rgba(36, 158, 124, 0.18);
+}

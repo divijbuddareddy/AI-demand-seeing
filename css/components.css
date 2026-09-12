@@ -1,0 +1,84 @@
+/* 
+ * Fridayy AI Global Growth Copilot - Component Styles (Fridayy Theme)
+ */
+
+/* Mock Amazon / Noon Product Card Preview */
+.marketplace-preview-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--fridayy-teal-border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(15, 56, 44, 0.08);
+}
+
+.marketplace-badge-amazon {
+  background: #0F382C;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* Radar & Chart Containers */
+.chart-container-fixed {
+  position: relative;
+  width: 100%;
+  height: 280px;
+}
+
+/* Pipeline Status Stepper */
+.stepper-node {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stepper-node:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 32px;
+  bottom: -16px;
+  width: 2px;
+  background: var(--fridayy-teal-border);
+}
+
+.stepper-node.active::after {
+  background: var(--fridayy-teal);
+}
+
+/* Interactive Pill Badges */
+.badge-score-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  background: #E8F8F1;
+  color: #0F382C;
+  border: 1px solid #B7E6D4;
+}
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: #D2F0E3;
+  height: 6px;
+  border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #249E7C;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(36, 158, 124, 0.4);
+}
